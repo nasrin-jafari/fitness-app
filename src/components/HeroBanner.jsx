@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-
 import HeroBannerImage from "../assets/images/banner.png";
-
 const HeroBanner = () => (
   <Box
     sx={{ mt: { lg: "212px", xs: "70px" }, ml: { sm: "50px" } }}
@@ -57,5 +55,4 @@ const HeroBanner = () => (
     <img src={HeroBannerImage} alt="hero-banner" className="hero-banner-img" />
   </Box>
 );
-
 export default HeroBanner;
