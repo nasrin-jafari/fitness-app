@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
-
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import HorizontalScrollbar from "./HorizontalScrollbar";
-
 const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   const [search, setSearch] = useState("");
   const [bodyParts, setBodyParts] = useState([]);
@@ -42,7 +40,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       setExercises(searchedExercises);
     }
   };
-
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
       <Typography
