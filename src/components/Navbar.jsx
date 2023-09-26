@@ -1,22 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
-
 import Logo from "../assets/images/Logo.png";
-
 const Navbar = () => (
   <Stack
     direction="row"
     justifyContent="space-between"
     sx={{
-      // gap: {  xs: "40px"  , sm: "123px",},
       mt: { sm: "32px", xs: "20px" },
       justifyContent: "none",
     }}
-    // px="20px"
-    // border={1}
   >
-    <Link to="/" >
+    <Link to="/">
       <img
         src={Logo}
         alt="logo"
@@ -25,14 +20,12 @@ const Navbar = () => (
     </Link>
     <Stack
       direction="row"
-      // gap="40px"
       justifyContent="space-between"
       fontFamily="Alegreya"
       fontSize="24px"
       alignItems="flex-end"
-      // border={1}
       width="200px"
-      sx={{ml :{ xs :"8px" , sm :"120px"}}}
+      sx={{ ml: { xs: "8px", sm: "120px" } }}
     >
       <Link
         to="/"
